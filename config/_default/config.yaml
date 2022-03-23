@@ -3,15 +3,15 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: "小计" # Website name
-baseURL: 'https://example.com/' # Website URL
+title: "学习小计" # 网站名称
+baseURL: 'https://example.com/' # 上传后的网站地址
 
 ############################
 ## PAGE OPTIONS
 ############################
 
 cascade:
-  # Blog post options
+  # 博客帖子选项
   - _target:
       path: /post/**
     editable: true
@@ -24,10 +24,10 @@ cascade:
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
+defaultContentLanguage: zh
+hasCJKLanguage: true
 defaultContentLanguageInSubdir: false
-removePathAccents: true
+removePathAccents: true # 将路径地址字符转换为Ascii格式
 
 ############################
 ## MODULES
@@ -42,7 +42,7 @@ module:
 ## ADVANCED
 ############################
 
-enableGitInfo: false
+enableGitInfo: true
 summaryLength: 30
 paginate: 10
 enableEmoji: true
@@ -59,13 +59,13 @@ outputs:
   section: [HTML, RSS]
 imaging:
   resampleFilter: lanczos
-  quality: 75
+  quality: 100
   anchor: smart
 timeout: 600000
 taxonomies:
   tag: tags
   category: categories
-  author: authors
+  author: author
 markup:
   _merge: deep
 related:
